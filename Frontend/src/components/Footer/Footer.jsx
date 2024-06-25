@@ -6,7 +6,7 @@ const Footer = () => {
     <div className='footer' id="footer">
         <div className="footer-content">
             <div className="footer-content-left">
-                <img src={assets.logo} alt="" />
+                <img className="footer-logo-img"src={assets.logo} alt="" width="50%" height="45%"  />
                 <p>Delivering deliciousness right to your door. Our mission is to connect you with the best local restaurants and provide a seamless, mouth-watering experience. We pride ourselves on fast, reliable service and a diverse selection of cuisines to satisfy every craving. Your satisfaction is our priority.</p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="food-content-center">
+            <div className="footer-content-center">
                 <h2>COMPANY</h2>
                 <ul>
                     <li>Home</li>
