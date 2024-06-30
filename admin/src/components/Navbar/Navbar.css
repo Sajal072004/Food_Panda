@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+  }
+  
+  .navbar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2; /* Adjust line height to control spacing */
+  }
+  
+  .navbar .logo {
+    width: max(10%, 120px);
+    height: 70px;
+    transform: scale(1.3);
+    margin-top: 2px; /* Adjust margin to control spacing */
+  }
+  
+  .navbar .profile {
+    width: 50px;
+  }
+  
