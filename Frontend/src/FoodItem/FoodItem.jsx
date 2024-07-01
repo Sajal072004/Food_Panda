@@ -6,7 +6,7 @@ import { StoreContext } from '../context/StoreContext';
 const FoodItem = ({id,name,price,description,image}) => {
 
     // const [itemCount,setItemCount]=useState(0);
-    const url="http://localhost:4000";
+    const url="https://food-panda-backend.onrender.com";
     const {cartItems,setCartItem,addToCart,removeFromCart}=useContext(StoreContext);
 
   return (
