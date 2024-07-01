@@ -4,7 +4,7 @@ import { StoreContext } from "../../context/StoreContext";
 import { useContext } from "react";
 
 const Cart = () => {
-  const url="http://localhost:4000";
+  const url="https://food-panda-backend.onrender.com";
   const { cartItems, food_list, removeFromCart,getTotalCartAmount} = useContext(StoreContext);
 
   const navigate= useNavigate();
