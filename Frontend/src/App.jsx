@@ -15,7 +15,7 @@ const App = () => {
   const[showLogin, setShowLogin]=useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
-      if (window.location.href.startsWith("https://food-panda-dviw.onrender.com/verify?success")) {
+      if (window.location.href.startsWith("https://food-panda-dviw.onrender.com/verify")) {
         clearInterval(interval); 
         alert("Payment Successful! Check your orders section.");
         window.location.href = "https://food-panda-dviw.onrender.com/";
