@@ -13,12 +13,13 @@ import MyOrders from "./pages/MyOrders/MyOrders.jsx";
 const App = () => {
 
   const[showLogin, setShowLogin]=useState(false);
+  
   useEffect(() => {
     const interval = setInterval(() => {
-      if (window.location.href.startsWith("https://food-panda-dviw.onrender.com/verify")) {
+      if (window.location.href.startsWith("https://food-panda-dviw.onrender.com/verify?success")) {
         clearInterval(interval); 
         alert("Payment Successful! Check your orders section.");
-        window.location.href = "https://food-panda-dviw.onrender.com/";
+        window.location.href = "https://food-panda-dviw.onrender.com";
       }
     }, 1000); 
 
