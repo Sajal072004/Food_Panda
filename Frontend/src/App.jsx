@@ -13,6 +13,18 @@ import MyOrders from "./pages/MyOrders/MyOrders.jsx";
 const App = () => {
 
   const[showLogin, setShowLogin]=useState(false);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (window.location.href.startsWith("https://food-delivery-frontend-no0l.onrender.com/verify?success")) {
+        clearInterval(interval); 
+        alert("Payment Successful! Check your orders section.");
+        window.location.href = "https://food-delivery-frontend-no0l.onrender.com/";
+      }
+    }, 1000); 
+
+    return () => clearInterval(interval); 
+  }, []);
+
 
   return (
     <>
